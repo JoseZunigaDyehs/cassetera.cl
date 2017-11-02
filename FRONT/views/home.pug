@@ -1,9 +1,9 @@
 extends ./layout.pug
 block contenido
   section.container-fluid.home-news
-    .row.align-items-center.py-5
+    .row.align-items-center.py-md-5.py-sm-.py-4
       .col-md-6.col-12
-        .destacados-1.bg-white.p-4.box-shadow
+        .destacados-1.bg-white.p-4.box-shadow.mb-sm-2.mb-md-0.mb-2
           img(src='../assets/img/02.jpg')
           .filter-image
           .ir.d-flex.align-items-center.justify-content-center
@@ -52,12 +52,12 @@ block contenido
             h6 loremmmmmmmmmm
             p Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-  section.ultimos-artistas.py-5
+  section.ultimos-artistas
     .container
-      .row.justify-content-center
+      .row.justify-content-center.py-md-5.py-sm-4.py-4
         h4.w-100.pl-3.titulo.mb-4 Últimos artistas
-        .col-md-2.col-4
-          .artista.w-100.box-shadow
+        .col-md-2.col-sm-4.col-6
+          .artista.w-100.box-shadow.mb-md-0.mb-sm-2.mb-2
             img(src='../assets/img/03.jpg')
             .filter-image
             .ir.d-flex.align-items-center.justify-content-center
@@ -66,8 +66,8 @@ block contenido
                 p.mb-0 VER ARTISTA
             p.text-center.pt-4.text-uppercase nombre usuario
             h5.w-100.text-center.py-2.mb-0 MC
-        .col-md-2.col-4
-          .artista.w-100.box-shadow
+        .col-md-2.col-sm-4.col-6
+          .artista.w-100.box-shadow.mb-md-0.mb-sm-2.mb-2
             img(src='../assets/img/03.jpg')
             .filter-image
             .ir.d-flex.align-items-center.justify-content-center
@@ -76,8 +76,8 @@ block contenido
                 p.mb-0 VER ARTISTA
             p.text-center.pt-4.text-uppercase nombre usuario puede ser mas grande
             h5.w-100.text-center.py-2.mb-0 MC
-        .col-md-2.col-4
-          .artista.w-100.box-shadow
+        .col-md-2.col-sm-4.col-6
+          .artista.w-100.box-shadow.mb-md-0.mb-sm-2.mb-2
             img(src='../assets/img/03.jpg')
             .filter-image
             .ir.d-flex.align-items-center.justify-content-center
@@ -86,8 +86,8 @@ block contenido
                 p.mb-0 VER ARTISTA
             p.text-center.pt-4.text-uppercase nombre usuario
             h5.w-100.text-center.py-2.mb-0 GRAFFITERO
-        .col-md-2.col-4
-          .artista.w-100.box-shadow
+        .col-md-2.col-sm-4.col-6
+          .artista.w-100.box-shadow.mb-md-0.mb-sm-2.mb-2
             img(src='../assets/img/03.jpg')
             .filter-image
             .ir.d-flex.align-items-center.justify-content-center
@@ -96,8 +96,8 @@ block contenido
                 p.mb-0 VER ARTISTA
             p.text-center.pt-4.text-uppercase nombre usuario
             h5.w-100.text-center.py-2.mb-0 GRAFFITERO
-        .col-md-2.col-4
-          .artista.w-100.box-shadow
+        .col-md-2.col-sm-4.col-6
+          .artista.w-100.box-shadow.mb-md-0.mb-sm-2.mb-2
             img(src='../assets/img/03.jpg')
             .filter-image
             .ir.d-flex.align-items-center.justify-content-center
@@ -106,8 +106,8 @@ block contenido
                 p.mb-0 VER ARTISTA
             p.text-center.pt-4.text-uppercase nombre usuario
             h5.w-100.text-center.py-2.mb-0 BEATMAKER
-        .col-md-2.col-4
-          .artista.w-100.box-shadow
+        .col-md-2.col-sm-4.col-6
+          .artista.w-100.box-shadow.mb-md-0.mb-sm-2.mb-2
             img(src='../assets/img/03.jpg')
             .filter-image
             .ir.d-flex.align-items-center.justify-content-center
@@ -118,3 +118,136 @@ block contenido
             h5.w-100.text-center.py-2.mb-0 MC
         a(href='#')
           h5.mt-4 VER MÁS
+  section.sec-repro
+    .container.py-md-5.py-sm-4.py-4
+      h4.w-100.pl-3.titulo.mb-4 TOP 10 
+      .row.justify-content-center
+        .d-flex.w-25.bg-dark.orden.flex-column
+          h6.w-100.px-4.py-3 ORDEN
+          .fila-orden.px-4.py-2
+            p TOP ALBUM
+          .fila-orden.px-4.py-2
+            p TOP CANCIÓN
+          .fila-orden.px-4.py-2
+            p TOP ARTISTA
+          .fila-orden.px-4.py-2
+            p TOP AÑO
+          .fila-orden.px-4.py-2
+            p TOP MES
+          .fila-orden.px-4.py-2
+            p TOP SEMANA
+          .fila-orden.px-4.py-2
+            p TOP TODOS LOS TIEMPOS
+        .d-flex.w-75.listado-top.flex-column
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 1
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza mas larga con muchos caracteres para sobrepasar todo y ver que pasas
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 2
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 3
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 4
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 5
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 6
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza mas larga con muchos caracteres para sobrepasar todo y ver que pasas
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 7
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 8
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 9
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex.align-items-right
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+          .px-2.d-flex.fila-top.align-items-center.justify-content-between
+            .d-flex.align-items-center
+              .badge.badge-pill.badge-dark.d-flex.justify-content-center.align-items-center 10
+            .d-flex.flex-column.w-100
+              h5.mb-0 El rapero favorito
+              p.mb-0 Cancion de la tristeza
+            .d-flex
+              img(src='../assets/img/back-mc.jpg')
+            .d-flex.px-2.align-items-center
+              p.mb-0.mr-1 300
+              i.fa.fa-play-circle(aria-hidden='true')
+      a.text-center(href='#')
+        h5.mt-4 VER MÁS

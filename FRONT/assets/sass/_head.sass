@@ -1,0 +1,52 @@
+//COLORES
+$c-gris-1: #f8f9fb
+$c-gris-2: #5f5f5f
+
+body
+  background-color: $c-gris-1
+  font-size: 0.9rem
+.bg-white
+  background-color: #fff
+.box-shadow
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.57)
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.57)
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.57)
+.filter-image
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 5
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.25)
+  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.81))
+  background: -o-radial-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.81))
+  background: -moz-radial-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.81))
+  background: radial-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.81))
+.titulo
+  position: relative
+  &:before
+    content: ""
+    background: #b5b5b5
+    width: 100px
+    height: 1px
+    position: absolute
+    bottom: -5px
+.ir
+  position: absolute
+  z-index: 25
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.8)
+  left: 0
+  top: -100%
+  a
+    text-decoration: none
+    &:hover
+      color: red
+.bg-dark
+  color: $c-gris-1
+//TRANSICIONES
+.ir,
+.sec-repro .listado-top .fila-top
+  transition: all 600ms ease
