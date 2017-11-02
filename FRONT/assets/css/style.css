@@ -1,9 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 body {
   background-color: #f8f9fb;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100; }
 
 .bg-white {
   background-color: #fff; }
+
+.bg-oscuro {
+  background-color: #000;
+  color: #f8f9fb; }
+
+.bg-gris-claro {
+  background-color: #eaeaea;
+  color: #444444; }
 
 .box-shadow {
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.57);
@@ -49,6 +60,12 @@ body {
 .bg-dark {
   color: #f8f9fb; }
 
+.w-10 {
+  width: 10%; }
+
+.w-5 {
+  width: 5%; }
+
 .ir,
 .sec-repro .listado-top .fila-top {
   -webkit-transition: all 600ms ease;
@@ -81,32 +98,28 @@ body {
     z-index: 10;
     color: rgba(248, 249, 251, 0.95); }
 
-.ultimos-artistas {
-  background-color: #5f5f5f; }
-  .ultimos-artistas .titulo {
-    color: #f8f9fb; }
-  .ultimos-artistas .artista {
-    color: white;
+.ultimos-artistas .artista {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 150px; }
+  .ultimos-artistas .artista:hover .ir {
+    top: 0; }
+  .ultimos-artistas .artista img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: auto;
+    height: 150px;
+    z-index: 5;
+    left: 0; }
+  .ultimos-artistas .artista p, .ultimos-artistas .artista h5 {
     position: relative;
-    overflow: hidden;
-    height: 150px; }
-    .ultimos-artistas .artista:hover .ir {
-      top: 0; }
-    .ultimos-artistas .artista img {
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      width: auto;
-      height: 150px;
-      z-index: 5;
-      left: 0; }
-    .ultimos-artistas .artista p, .ultimos-artistas .artista h5 {
-      position: relative;
-      z-index: 10; }
-    .ultimos-artistas .artista h5 {
-      bottom: 0;
-      position: absolute;
-      background-color: rgba(0, 107, 148, 0.42); }
+    z-index: 10; }
+  .ultimos-artistas .artista h5 {
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 107, 148, 0.42); }
 
 .sec-repro .orden h6 {
   background: rgba(255, 255, 255, 0.3);
@@ -133,8 +146,8 @@ body {
     .sec-repro .listado-top .fila-top p {
       line-height: 1; }
     .sec-repro .listado-top .fila-top .badge {
-      padding: 1rem;
-      margin-right: 0.5rem; }
+      width: 20%;
+      font-size: 1rem; }
     .sec-repro .listado-top .fila-top img {
       width: auto;
       height: 50px; }

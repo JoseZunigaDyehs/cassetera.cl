@@ -1,12 +1,24 @@
 //COLORES
 $c-gris-1: #f8f9fb
-$c-gris-2: #5f5f5f
+$c-gris-2: #eaeaea
+$c-gris-5: #444444
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i')
+$monserrat: 'Montserrat', sans-serif
 
 body
   background-color: $c-gris-1
   font-size: 0.9rem
+  font-family: $monserrat
+  font-weight: 100
 .bg-white
   background-color: #fff
+.bg-oscuro
+  background-color: #000
+  color: $c-gris-1
+.bg-gris-claro
+  background-color: $c-gris-2
+  color: $c-gris-5
 .box-shadow
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.57)
   -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.57)
@@ -46,6 +58,10 @@ body
       color: red
 .bg-dark
   color: $c-gris-1
+.w-10
+  width: 10%
+.w-5
+  width: 5%
 //TRANSICIONES
 .ir,
 .sec-repro .listado-top .fila-top
