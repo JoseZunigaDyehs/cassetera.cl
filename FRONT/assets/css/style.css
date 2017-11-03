@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 body {
   background-color: #f8f9fb;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 100; }
 
@@ -98,28 +98,24 @@ body {
     z-index: 10;
     color: rgba(248, 249, 251, 0.95); }
 
-.ultimos-artistas .artista {
+.ultimos-artistas .artista, .ultimos-artistas .evento, .ultimos-eventos .artista, .ultimos-eventos .evento {
   color: white;
   position: relative;
   overflow: hidden;
   height: 150px; }
-  .ultimos-artistas .artista:hover .ir {
+  .ultimos-artistas .artista:hover .ir, .ultimos-artistas .evento:hover .ir, .ultimos-eventos .artista:hover .ir, .ultimos-eventos .evento:hover .ir {
     top: 0; }
-  .ultimos-artistas .artista img {
+  .ultimos-artistas .artista img, .ultimos-artistas .evento img, .ultimos-eventos .artista img, .ultimos-eventos .evento img {
     position: absolute;
     top: 0%;
     left: 0%;
     width: auto;
-    height: 150px;
+    height: 120%;
     z-index: 5;
     left: 0; }
-  .ultimos-artistas .artista p, .ultimos-artistas .artista h5 {
+  .ultimos-artistas .artista p, .ultimos-artistas .artista h5, .ultimos-artistas .evento p, .ultimos-artistas .evento h5, .ultimos-eventos .artista p, .ultimos-eventos .artista h5, .ultimos-eventos .evento p, .ultimos-eventos .evento h5 {
     position: relative;
     z-index: 10; }
-  .ultimos-artistas .artista h5 {
-    bottom: 0;
-    position: absolute;
-    background-color: rgba(0, 107, 148, 0.42); }
 
 .sec-repro .orden h6 {
   background: rgba(255, 255, 255, 0.3);
